@@ -30,12 +30,10 @@
         }
     }
 
-    
 
     const props = defineProps({
         openSidebar: Boolean,
         motif: String,
-        motifs:String
     })
 </script>
 

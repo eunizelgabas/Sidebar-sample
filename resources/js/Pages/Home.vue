@@ -1,26 +1,22 @@
 <script setup>
     import Layout1 from '@/Layouts/Layout1.vue'
     import Card2 from '@/Components/Card2.vue'
+    import Navv from '@/Components/Navv.vue'
     import { computed, inject, ref } from 'vue';
 
     const props = defineProps({
         motif : String,
     })
 
-   
-    // const motifs = inject('the_motifs')
-
-    // // const selectedMotifClass = ref(motif);
-    // const motifClass = computed(() => motifs.value)
-   
 </script>
 
 <template>
 
 <Layout1>
-    <nav class="flex items-center justify-between p-2 bg-gray-300">
+    <!-- <nav :class="motifClass" class="flex items-center justify-between p-2 bg-gray-300">
         <h1 class="text-4xl">Home</h1>
-    </nav>
+    </nav> -->
+    <Navv/>
     <div class="p-8 mt-5">
        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales felis pellentesque, posuere nulla ac, vehicula turpis. Aenean sed lorem dictum, pharetra nunc eget, vehicula sem. Maecenas tincidunt vitae eros eu scelerisque. Donec sodales felis et mi vulputate, nec placerat mi pulvinar. Quisque blandit tellus ac diam consectetur, in consectetur neque lacinia. Sed pretium tincidunt lacus, vel pharetra magna sollicitudin quis. Nunc tellus erat, ullamcorper rhoncus justo eget, egestas convallis diam. Curabitur a augue sed diam pharetra efficitur et non quam. Suspendisse quis faucibus tellus, ac imperdiet dolor. Vivamus at aliquam risus. Donec viverra, ipsum a lacinia lobortis, mauris nisi laoreet turpis, et vulputate quam quam quis nisi. Aenean quis risus tortor. </h5>
         <p class="text-center">

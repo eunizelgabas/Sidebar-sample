@@ -1,11 +1,16 @@
 <script setup>
     import { Link } from '@inertiajs/vue3';
+import { inject } from 'vue';
+import { computed } from 'vue';
 
     import { defineProps } from 'vue';
     defineProps({
     collapse:Boolean
   })
+  const motif = inject('the_motifs')
 
+// const selectedMotifClass = ref(motif);
+const motifClass = computed(() => motif.value)
 
 </script>
 

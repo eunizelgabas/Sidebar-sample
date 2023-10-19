@@ -11,9 +11,6 @@ const motifClass = computed(() => motif.value);
 
 <template>
 
-    <!-- <div class="card">
-        <h1>"I am a second child"</h1>
-    </div> -->
 
       <button href="#" :class="motifClass" class="rounded-sm inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white ">
         Get Started 
